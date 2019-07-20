@@ -81,15 +81,211 @@ ul {
     line-height: 36px;
     font-size: 13px;
 
+    // Date
 	.today-date {
 	    color: #555;
 	}
 
-	.ht-social {
-		float: right;
+	// SLR
+	.ht-slr {
+		float: right;		
 
-		.list-inline-item i {
-			color: #555;
+		// Social
+		.ht-social {
+			.list-inline-item i {
+				color: #555;
+			}
+		}
+
+		// HT Login / Register
+		.ht-logreg {
+			background: $default-color;
+			color: #fff;
+			cursor: pointer;
+			height: 37px;
+			line-height: 37px;
+			text-align: center;
+			width: 37px;
+
+			&:before {
+				color: #fff;
+				content: $fa-var-user;
+				font-family: $fontawesome;
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+/* Login Register */
+.logreg {
+	background: rgba(0, 0, 0, .1);
+	bottom: 0;
+	display: none;
+	padding-top: 100px; 
+	position: fixed;
+	overflow: auto;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+
+	.lr-item {
+		background: #fff;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		box-shadow: 0px 0px 20px 1px #ccc;
+		margin: 0 auto;
+		max-width: 500px;
+		padding: 40px 35px 25px 35px;
+		position: relative;
+		overflow: hidden;
+		
+		.lr-header {
+			height: 34px;
+			position: absolute;
+			right: 0;
+			top: 1px;
+			width: 34px;
+
+			&:before {
+				content: $fa-var-close;
+				color: #ddd;
+				cursor: pointer;
+				font-family: $fontawesome;
+				font-size: 23px;
+				position: absolute;
+				right: 10px;
+				top: 1px;
+				z-index: 2;
+			}
+
+			&:after {
+				content: $fa-var-close;
+				color: #777;
+				cursor: pointer;
+				font-family: $fontawesome;
+				font-size: 26px;
+				position: absolute;
+				right: 9px;
+				top: -1px;
+			}
+		}
+
+		.lr-nav {
+			background: #f1f1f1;
+			border: 1px solid #e4e4e4;
+			border-bottom: 0;
+
+			li {
+				float: left;
+				margin: 0;
+				width: 50%;
+
+				&:nth-child(1) a {
+				    border-right: 1px solid #e4e4e4;
+				}
+
+				a {
+				    background: #f1f1f1;
+				    color: #333;
+				    display: block;
+				    padding: 14px 0;
+				    text-align: center;
+				    text-decoration: none;					
+				}
+			}
+
+			.active {
+				border-top: 2px solid $default-color;
+
+				a {
+					background: #fff;
+				}
+			}
+		}
+
+		.lr-content {
+			border: 1px solid #e4e4e4;
+			border-top: 0;
+			height: 100%;
+
+			li {
+				display: none;
+				padding-top: 20px;
+				
+				&:nth-child(1) {
+					display: block;
+				}
+
+				.input-group {
+					margin: 0 auto 23px;
+					max-width: 90%;
+					
+					span {
+						background: #fff;
+						border-right: 0;
+						display: block;
+						line-height: 1.8;
+						text-align: center;
+						width: 40px;
+					}
+
+					input {
+						height: 44px;
+
+						&:focus {
+							box-shadow: 0 0 0 0;
+							outline: none;
+						}
+					}
+
+					.remember {
+						input {
+							height: auto;
+						}
+
+						label {
+							font-family: $lato;
+							font-size: 13px;
+							margin-bottom: 0;
+							position: relative;
+							top: -5px;
+						}
+					}
+
+					.forgot-pass {
+						flex: auto;
+
+						a {
+						    color: #333;
+						    float: right;
+							font-size: 13px;
+						    line-height: 17px;
+						    text-decoration: none;
+						}
+					}
+
+					button {
+						background: $button-color;
+						border-color: $default-color;
+						height: 44px;
+						width: 100%;
+
+						&:focus {
+							box-shadow: 0 0 0 0;
+							outline: none;
+						}
+					}
+				}
+
+				.privacy {
+					color: #555;
+					display: block;
+					font-size: 13px;
+					padding: 0px 23px 13px;
+					text-align: center;
+				}
+			}
 		}
 	}
 }
@@ -110,7 +306,7 @@ ul {
 	.navbar {
 	    border-top: 1px solid $default-color;
 		padding: 0;
-	    z-index: 99999;
+	    z-index: 999;
 
 	    @media screen and (max-width: $break-medium-end) {
 			border: 5px;
@@ -515,7 +711,7 @@ ul {
 			background: #fff;
 			color: #333;
 			position: relative;
-			z-index: 9999;
+			z-index: 998;
 
 			&:before {
 				background: #333;

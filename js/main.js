@@ -4,9 +4,38 @@ $(function() {
 
 
 // Lazy Load
-$("img.lazy").lazyload({
-	effect : 'fadeToggle'
+// $("img.lazy").lazyload({
+// 	// effect : 'fadeToggle',
+// 	// threshold: 100
+// });
+
+$("img.lazy").lazyLoadXT({
+	srcAttr: 'data-src'
 });
+
+
+
+// Login / Register
+$('.ht-wrapper').on('click', '.ht-logreg', function() {
+	$('.logreg').show();
+});
+
+$('.lr-item').on('click', '.lr-header', function() {
+	$('.logreg').hide();
+});
+
+$('.lr-nav li').on('click', 'a', function(e) {
+	e.preventDefault();
+
+	var id = $(this).parent().index();
+
+	$('.lr-nav').find('li').removeClass('active').eq(id).addClass('active');
+
+	$('.lr-content').find('li').hide();
+	$('.lr-content').find('li').eq(id).show();
+});
+
+
 
 /************** Nav **************/
 $('.dropdown a.nav-link').on('click', function(e) {

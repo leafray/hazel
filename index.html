@@ -3,15 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Lilacy</title>
+	<title>Hazel</title>
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+	<link rel="stylesheet" href="css/jquery.lazyloadxt.fadein.min.css">
 	<link rel="stylesheet" href="css/hazel-slider.css">
-	
 	<!-- Site Style -->
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -28,55 +30,134 @@
 					<div class="today-date">June 29, 2019</div>
 				</div>
 				<div class="col-6">
-					<div class="ht-social">
-						<ul class="list-inline">
-							<li class="list-inline-item">
-								<a href="#">
-								  <i class="fa fa-facebook" title="Facebook"></i>
-								</a>
-							</li>
+					<ul class="list-inline ht-slr">
+						<li class="list-inline-item ht-social">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a href="#">
+									  <i class="fa fa-facebook" title="Facebook"></i>
+									</a>
+								</li>
 
-							<li class="list-inline-item">
-								<a href="#">
-								  <i class="fa fa-twitter" title="Twitter"></i>
-								</a>
-							</li>
+								<li class="list-inline-item">
+									<a href="#">
+									  <i class="fa fa-twitter" title="Twitter"></i>
+									</a>
+								</li>
 
-							<li class="list-inline-item">
-								<a href="#">
-								  <i class="fa fa-google-plus" title="Google Plus"></i>
-								</a>
-							</li>
+								<li class="list-inline-item">
+									<a href="#">
+									  <i class="fa fa-google-plus" title="Google Plus"></i>
+									</a>
+								</li>
 
-							<li class="list-inline-item">
-								<a href="#">
-								  <i class="fa fa-linkedin" title="Linkedin"></i>
-								</a>
-							</li>
+								<li class="list-inline-item">
+									<a href="#">
+									  <i class="fa fa-linkedin" title="Linkedin"></i>
+									</a>
+								</li>
 
-							<li class="list-inline-item">
-								<a href="#">
-								  <i class="fa fa-youtube" title="Youtube"></i>
-								</a>
-							</li>
+								<li class="list-inline-item">
+									<a href="#">
+									  <i class="fa fa-youtube" title="Youtube"></i>
+									</a>
+								</li>
 
-							<li class="list-inline-item">
-								<a href="#">
-								  <i class="fa fa-instagram" title="Instagram"></i>
-								</a>
-							</li>
+								<li class="list-inline-item">
+									<a href="#">
+									  <i class="fa fa-instagram" title="Instagram"></i>
+									</a>
+								</li>
 
-							<li class="list-inline-item">
-								<a href="#">
-								  <i class="fa fa-vimeo" title="Vimeo"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
+								<li class="list-inline-item">
+									<a href="#">
+									  <i class="fa fa-vimeo" title="Vimeo"></i>
+									</a>
+								</li>
+							</ul>
+						</li> <!-- .ht-scoial -->
+						<li class="list-inline-item ht-logreg"></li> <!-- .ht-logreg -->
+					</ul>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> <!-- .ht-wrapper -->
+	
+	<div class="logreg">
+		<div class="lr-item">
+			<div class="lr-header"></div>
+			<ul class="list-inline lr-nav clearfix">
+				<li class="list-inline-item active">
+					<a href="#">Sign In</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="#">Sign Up</a>
+				</li>
+			</ul>
+			<ul class="list-inline lr-content">
+				<li>
+					<div class="input-group flex-nowrap">
+						<div class="input-group-prepend">
+					    	<span class="input-group-text" id="addon-wrapping">
+					    		<i class="fa fa-user-o" aria-hidden="true"></i>
+					    	</span>
+					  	</div>
+					  	<input type="text" name="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+					</div>
+					<div class="input-group flex-nowrap">
+						<div class="input-group-prepend">
+					    	<span class="input-group-text" id="addon-wrapping">
+					    		<i class="fa fa-lock" aria-hidden="true"></i>
+					    	</span>
+					  	</div>
+					  	<input type="password" name="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping">
+					</div>
+					<div class="input-group flex-nowrap">
+						<div class="remember">
+							<input type="checkbox" checked="">
+							<label for="remember">Remember me</label>
+						</div>
+						<div class="forgot-pass">
+							<a href="#">Forgot Password</a>
+						</div>
+					</div>
+					<div class="input-group flex-nowrap">
+						<button type="button" class="btn btn-primary">Sign in</button>
+					</div>
+				</li>
+				<li>
+					<div class="input-group flex-nowrap">
+						<div class="input-group-prepend">
+					    	<span class="input-group-text" id="addon-wrapping">
+					    		<i class="fa fa-user-o" aria-hidden="true"></i>
+					    	</span>
+					  	</div>
+					  	<input type="text" name="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+					</div>
+					<div class="input-group flex-nowrap">
+						<div class="input-group-prepend">
+					    	<span class="input-group-text" id="addon-wrapping">
+					    		<i class="fa fa-at" aria-hidden="true"></i>
+					    	</span>
+					  	</div>
+					  	<input type="text" name="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping">
+					</div>
+					<div class="input-group flex-nowrap">
+						<div class="input-group-prepend">
+					    	<span class="input-group-text" id="addon-wrapping">
+					    		<i class="fa fa-lock" aria-hidden="true"></i>
+					    	</span>
+					  	</div>
+					  	<input type="password" name="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping">
+					</div>
+					<div class="input-group flex-nowrap">
+						<button type="button" class="btn btn-primary">Sign up</button>
+					</div>
+					<span class="privacy">By creating this account, you agree to our Privacy Policy & Cookie Policy.</span>
+				</li>
+			</ul>
+		</div>
+	</div> <!-- .log-reg -->
 
 	<!-- header bottom -->
 	<div class="hb-wrapper d-none d-lg-block">
@@ -130,7 +211,7 @@
 					    			<div class="mm-item">
 						    			<a href="#" class="megamenu-cat">Food</a>
 						    			<a href="#">
-						    				<img src="img/load.png" data-original="uploads/image-01.jpg" class="img-fluid lazy" alt="">
+						    				<img src="img/load.png" data-src="uploads/image-01.jpg" class="img-fluid lazy" alt="">
 						    			</a>
 						    			<h3>
 						    				<a href="#">Pellentesque efficitur ornare sapien</a>
@@ -145,7 +226,7 @@
 					    			<div class="mm-item">
 						    			<a href="#" class="megamenu-cat">Food</a>					    			
 						    			<a href="#">
-						    				<img src="img/load.png" data-original="uploads/image-02.jpg" class="img-fluid lazy" alt="">
+						    				<img src="img/load.png" data-src="uploads/image-02.jpg" class="img-fluid lazy" alt="">
 						    			</a>
 						    			<h3>
 						    				<a href="#">Morbi ut laoreet dui</a>
@@ -160,7 +241,7 @@
 					    			<div class="mm-item">
 						    			<a href="#" class="megamenu-cat">Food</a>					    			
 						    			<a href="#">
-						    				<img src="img/load.png" data-original="uploads/image-03.jpg" class="img-fluid lazy" alt="">
+						    				<img src="img/load.png" data-src="uploads/image-03.jpg" class="img-fluid lazy" alt="">
 						    			</a>
 						    			<h3>
 						    				<a href="#">Nam tincidunt nunc quis lacinia ullamcorper</a>
@@ -175,7 +256,7 @@
 					    			<div class="mm-item">
 						    			<a href="#" class="megamenu-cat">Food</a>					    			
 						    			<a href="#">
-						    				<img src="img/load.png" data-original="uploads/image-04.jpg" class="img-fluid lazy" alt="">
+						    				<img src="img/load.png" data-src="uploads/image-04.jpg" class="img-fluid lazy" alt="">
 						    			</a>
 						    			<h3>
 						    				<a href="#">Ut odio lectus, sodales tristique mollis in</a>
@@ -227,7 +308,7 @@
 					    					<div class="mm-item">
 						    					<a href="#" class="megamenu-cat">Basketball</a>					    			
 								    			<a href="#">
-								    				<img src="img/load.png" data-original="uploads/image-05.jpg" class="img-fluid lazy" alt="">
+								    				<img src="img/load.png" data-src="uploads/image-05.jpg" class="img-fluid lazy" alt="">
 								    			</a>
 								    			<h3>
 								    				<a href="#">Mauris nec sem cursus, pretium augue quis, scelerisque orci</a>
@@ -242,7 +323,7 @@
 					    					<div class="mm-item">
 						    					<a href="#" class="megamenu-cat">Football</a>					    			
 								    			<a href="#">
-								    				<img src="img/load.png" data-original="uploads/image-06.jpg" class="img-fluid lazy" alt="">
+								    				<img src="img/load.png" data-src="uploads/image-06.jpg" class="img-fluid lazy" alt="">
 								    			</a>
 								    			<h3>
 								    				<a href="#">Nulla tempus enim nec urna pharetra, hendrerit euismod turpis mattis</a>
@@ -257,7 +338,7 @@
 					    					<div class="mm-item">
 						    					<a href="#" class="megamenu-cat">Basketball</a>					    			
 								    			<a href="#">
-								    				<img src="img/load.png" data-original="uploads/image-07.jpg" class="img-fluid lazy" alt="">
+								    				<img src="img/load.png" data-src="uploads/image-07.jpg" class="img-fluid lazy" alt="">
 								    			</a>
 								    			<h3>
 								    				<a href="#">Aliquam erat volutpat. Etiam ultrices auctor egestas</a>
@@ -358,7 +439,7 @@
 				<div class="col-12 col-lg-6">
 					<div class="l1r3-lg-content">
 						<a href="#">
-							<img src="img/load.png" data-original="uploads/image-10.jpg" alt="" class="img-fluid lazy">
+							<img src="img/load.png" data-src="uploads/image-10.jpg" alt="" class="img-fluid lazy">
 						</a>
 						<div class="l1r3-lg-content-body">
 
@@ -387,7 +468,7 @@
 								<div class="row"> <!-- second .row -->
 									<div class="col-12 col-lg-5"> <!-- col-lg-5 -->
 										<a href="#">
-											<img src="img/load.png" data-original="uploads/image-11.jpg" alt="" class="img-fluid lazy">
+											<img src="img/load.png" data-src="uploads/image-11.jpg" alt="" class="img-fluid lazy">
 										</a>
 									</div> <!-- col-lg-5 -->
 
@@ -422,7 +503,7 @@
 								<div class="row"> <!-- second .row -->
 									<div class="col-12 col-lg-5"> <!-- col-lg-5 -->
 										<a href="#">
-											<img src="img/load.png" data-original="uploads/image-12.jpg" alt="" class="img-fluid lazy">
+											<img src="img/load.png" data-src="uploads/image-12.jpg" alt="" class="img-fluid lazy">
 										</a>
 									</div> <!-- col-lg-5 -->
 								
@@ -456,7 +537,7 @@
 								<div class="row"> <!-- second .row -->
 									<div class="col-12 col-lg-5"> <!-- col-lg-5 -->
 										<a href="#">
-											<img src="img/load.png" data-original="uploads/image-13.jpg" alt="" class="img-fluid lazy">
+											<img src="img/load.png" data-src="uploads/image-13.jpg" alt="" class="img-fluid lazy">
 										</a>
 									</div> <!-- col-lg-5 -->
 								
@@ -505,7 +586,7 @@
 		<div class="row featured-item">
 			<div class="col-12 col-md-6 col-sm-12">
 				<a href="#">
-					<img src="img/load.png" data-original="uploads/image-14.jpg" class="img-fluid lazy" alt="">
+					<img src="img/load.png" data-src="uploads/image-14.jpg" class="img-fluid lazy" alt="">
 				</a>
 				<div class="featured-item-body">
 					<h3>
@@ -526,7 +607,7 @@
 			</div>
 			<div class="col-12 col-md-3 col-sm-6">
 				<a href="#">
-					<img src="img/load.png" data-original="uploads/image-15.jpg" class="img-fluid lazy" alt="">
+					<img src="img/load.png" data-src="uploads/image-15.jpg" class="img-fluid lazy" alt="">
 				</a>
 				<div class="featured-item-body">
 					<h3>
@@ -547,7 +628,7 @@
 			</div>
 			<div class="col-12 col-md-3 col-sm-6">
 				<a href="#">
-					<img src="img/load.png" data-original="uploads/image-16.jpg" alt="" class="img-fluid lazy">
+					<img src="img/load.png" data-src="uploads/image-16.jpg" alt="" class="img-fluid lazy">
 				</a>
 				<div class="featured-item-body">
 					<h3>
@@ -569,7 +650,7 @@
 
 			<div class="col-12 col-md-3 col-sm-6">
 				<a href="#">
-					<img src="img/load.png" data-original="uploads/image-17.jpg" class="img-fluid lazy" alt="">
+					<img src="img/load.png" data-src="uploads/image-17.jpg" class="img-fluid lazy" alt="">
 				</a>
 				<div class="featured-item-body">
 					<h3>
@@ -590,7 +671,7 @@
 			</div>
 			<div class="col-12 col-md-3 col-sm-6">
 				<a href="#">
-					<img src="img/load.png" data-original="uploads/image-18.jpg" class="img-fluid lazy" alt="">
+					<img src="img/load.png" data-src="uploads/image-18.jpg" class="img-fluid lazy" alt="">
 				</a>
 				<div class="featured-item-body">
 					<h3>
@@ -611,7 +692,7 @@
 			</div>
 			<div class="col-12 col-md-6 col-sm-12">
 				<a href="#">
-					<img src="img/load.png" data-original="uploads/image-19.jpg" alt="" class="img-fluid lazy">
+					<img src="img/load.png" data-src="uploads/image-19.jpg" alt="" class="img-fluid lazy">
 				</a>
 				<div class="featured-item-body">
 					<h3>
@@ -647,7 +728,7 @@
 				<div class="col-12 col-lg-3 col-md-12">
 					<div class="cw-sm-content">
 						<a href="#">
-							<img src="img/load.png" data-original="uploads/image-20.jpg" class="img-fluid lazy" alt="">
+							<img src="img/load.png" data-src="uploads/image-20.jpg" class="img-fluid lazy" alt="">
 						</a>
 				        <div class="cw-sm-body">
 				        	<h3>Nam sit amet pellentesque nulla tincidunt</h3>
@@ -759,7 +840,7 @@
 				<div class="col-12 col-lg-3 col-md-12">
 					<div class="cw-sm-content">
 						<a href="#">
-							<img src="img/load.png" data-original="uploads/image-26.jpg" class="img-fluid lazy" alt="">
+							<img src="img/load.png" data-src="uploads/image-26.jpg" class="img-fluid lazy" alt="">
 						</a>
 				        <div class="cw-sm-body">
 				        	<h3>Nam sit amet pellentesque nulla tincidunt</h3>
@@ -794,7 +875,7 @@
 				<div class="col-12 col-lg-4 col-md-6">
 					<div class="list-content-item">
 						<a href="#">
-							<img src="img/load.png" data-original="uploads/image-27.jpg" class="img-fluid lazy" alt="">
+							<img src="img/load.png" data-src="uploads/image-27.jpg" class="img-fluid lazy" alt="">
 						</a>
 						<div class="list-content-body">
 							<h3>
@@ -817,7 +898,7 @@
 				<div class="col-12 col-lg-4 col-md-6">
 					<div class="list-content-item">
 						<a href="#">
-							<img src="img/load.png" data-original="uploads/image-28.jpg" class="img-fluid lazy" alt="">
+							<img src="img/load.png" data-src="uploads/image-28.jpg" class="img-fluid lazy" alt="">
 						</a>
 						<div class="list-content-body">
 							<h3>
@@ -840,7 +921,7 @@
 				<div class="col-12 col-lg-4 col-md-6">
 					<div class="list-content-item">
 						<a href="#">
-							<img src="img/load.png" data-original="uploads/image-29.jpg" class="img-fluid lazy" alt="">
+							<img src="img/load.png" data-src="uploads/image-29.jpg" class="img-fluid lazy" alt="">
 						</a>
 						<div class="list-content-body">
 							<h3>
@@ -863,7 +944,7 @@
 				<div class="col-12 col-lg-4 col-md-6">
 					<div class="list-content-item">
 						<a href="#">
-							<img src="img/load.png" data-original="uploads/image-30.jpg" class="img-fluid lazy" alt="">
+							<img src="img/load.png" data-src="uploads/image-30.jpg" class="img-fluid lazy" alt="">
 						</a>
 						<div class="list-content-body">
 							<h3>
@@ -886,7 +967,7 @@
 				<div class="col-12 col-lg-4 col-md-6">
 					<div class="list-content-item">
 						<a href="#">
-							<img src="img/load.png" data-original="uploads/image-31.jpg" class="img-fluid lazy" alt="">
+							<img src="img/load.png" data-src="uploads/image-31.jpg" class="img-fluid lazy" alt="">
 						</a>
 						<div class="list-content-body">
 							<h3>
@@ -909,7 +990,7 @@
 				<div class="col-12 col-lg-4 col-md-6">
 					<div class="list-content-item">
 						<a href="#">
-							<img src="img/load.png" data-original="uploads/image-32.jpg" class="img-fluid lazy" alt="">
+							<img src="img/load.png" data-src="uploads/image-32.jpg" class="img-fluid lazy" alt="">
 						</a>
 						<div class="list-content-body">
 							<h3>
@@ -951,7 +1032,7 @@
 						<article class="fpost clearfix">	
 							<div class="entry-image">
 								<a href="#">
-									<img src="img/load.png" data-original="uploads/image-05.jpg" class="img-fluid lazy" alt="">
+									<img src="img/load.png" data-src="uploads/image-05.jpg" class="img-fluid lazy" alt="">
 								</a>
 							</div> <!-- .entry-image -->
 							<div class="entry-body">
@@ -973,7 +1054,7 @@
 						<article class="fpost clearfix">	
 							<div class="entry-image">
 								<a href="#">
-									<img src="img/load.png" data-original="uploads/image-09.jpg" class="img-fluid lazy" alt="">
+									<img src="img/load.png" data-src="uploads/image-09.jpg" class="img-fluid lazy" alt="">
 								</a>
 							</div> <!-- .entry-image -->
 							<div class="entry-body">
@@ -995,7 +1076,7 @@
 						<article class="fpost clearfix">	
 							<div class="entry-image">
 								<a href="#">
-									<img src="img/load.png" data-original="uploads/image-12.jpg" class="img-fluid lazy" alt="">
+									<img src="img/load.png" data-src="uploads/image-12.jpg" class="img-fluid lazy" alt="">
 								</a>
 							</div> <!-- .entry-image -->
 							<div class="entry-body">
@@ -1017,7 +1098,7 @@
 						<article class="fpost clearfix">	
 							<div class="entry-image">
 								<a href="#">
-									<img src="img/load.png" data-original="uploads/image-20.jpg" class="img-fluid lazy" alt="">
+									<img src="img/load.png" data-src="uploads/image-20.jpg" class="img-fluid lazy" alt="">
 								</a>
 							</div> <!-- .entry-image -->
 							<div class="entry-body">
@@ -1039,7 +1120,7 @@
 						<article class="fpost clearfix">	
 							<div class="entry-image">
 								<a href="#">
-									<img src="img/load.png" data-original="uploads/image-21.jpg" class="img-fluid lazy" alt="">
+									<img src="img/load.png" data-src="uploads/image-21.jpg" class="img-fluid lazy" alt="">
 								</a>
 							</div> <!-- .entry-image -->
 							<div class="entry-body">
@@ -1157,7 +1238,7 @@
 
 	
 	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/jquery.lazyload.js"></script>
+	<script src="js/jquery.lazyloadxt.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl/owl.carousel.min.js"></script>
 	<script src="js/hazel-slider.min.js"></script>
